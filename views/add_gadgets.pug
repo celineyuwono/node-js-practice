@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h1 #{title}
+    form(method='POST', action='/gadgets/add')
+        #form-group
+            label Name:
+            input.form-control(name='name', type='text') 
+        #form-group
+            label Maker:
+            input.form-control(name='maker', type='text')
+        #form-group
+            label Specs:
+            input.form-control(name='specs', type='text-area')
+        br
+        input.btn.btn-primary(type='submit', value='Submit')

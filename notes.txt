@@ -1,0 +1,29 @@
+{
+  "name": "nodekb",
+  "version": "1.0.0",
+  "description": "simple knowledgebase app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app" 
+  },
+  "author": "Celine Yuwono",
+  "license": "ISC"
+}
+
+npm start --> node app
+npm install --save express
+npm install -g nodemon
+npm install --save mongoose
+npm install --save body-parser
+npm install -g bower, bower install bootstrap
+For mongodb, go to cfg file and delete last line
+
+
+INSERT INFO TO DB
+In mongodb>bin
+mongo
+show dbs
+use nodekb
+db.createCollection('articles);
+db.articles.insert({title:"Article One", author:"Celine Yuwono", body:"This is article one."});
+db.articles.find().pretty();

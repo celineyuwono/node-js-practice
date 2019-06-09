@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        title Knowledgebase
+        link(rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.css')
+    body
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            a.navbar-brand(href='/') KnowledgeBase
+                .navbar-nav
+                a.nav-item.nav-link(href='/') Home
+                a.nav-item.nav-link(href='/articles/add') Add Article
+                a.nav-item.nav-link(href='/gadgets/add') Add Gadgets
+        br
+        br
+        .container
+            block content
+            br
+            hr
+            footer
+                p Copyright &copy; 2019
+
+        script(src='bower_components/jquery/dist/jquery.js')
+        script(src='bower_components/bootstrap/dist/js/bootstrap.js')
